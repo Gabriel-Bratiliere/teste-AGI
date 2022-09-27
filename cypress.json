@@ -1,0 +1,23 @@
+{
+    "defaultCommandTimeout": 15000,
+    "viewportWidth": 1500,
+    "viewportHeight": 1000,
+    "chromeWebSecurity":  false,
+    "baseUrl": "https://blogdoagi.com.br/",
+    "reporter": "cypress-multi-reporters",
+    "mochaJunitReporterReporterOptions": {
+	"mochaFile": "cypress/reports/junit/results-[hash].xml"
+    }, 
+	"video": false,
+    "workspaces": {
+	    "packages": ["packages/*"],
+	    "nohoist": [
+	      "**/mochawesome",
+	      "**/mochawesome/**",
+	      "**/mocha",
+	      "**/mocha/**",
+	      "**/cypress",
+	      "**/cypress/**"
+	    ]
+	}
+}

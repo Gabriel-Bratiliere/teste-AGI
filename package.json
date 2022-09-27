@@ -1,0 +1,22 @@
+{
+  "name": "agi-cypress-test",
+  "private": true,
+  "description": "Projeto de teste ILEGRA.",
+  "scripts": {
+    "open": "cypress open",
+    "cypress:run": "cypress run"
+  },
+  "standard": {
+    "globals": [
+      "beforeEach",
+      "cy",
+      "Cypress",
+      "describe",
+      "expect",
+      "it"
+    ]
+  },
+  "devDependencies": {
+    "cypress": "^10.8.0"
+  }
+}
